@@ -74,7 +74,16 @@ greeting('Jake');
 */
 
 //CODE HERE
+const compareNums = (num1, num2) => {
+  if(num1 > num2) {
+    return num1;
+  } else if(num1 < num2) {
+    return num2;
+  } 
+  compareNums();
+}
 
+compareNums(5, 5);
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
