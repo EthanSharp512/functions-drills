@@ -17,7 +17,6 @@ function helloWorld () {
 }
  helloWorld();
  
-
 ////////////////// PROBLEM 2 ////////////////////
 
 /*
@@ -25,7 +24,11 @@ function helloWorld () {
 */
 
 //CODE HERE
+const jsNinja = () => {
+  return "I am a JavaScript ninja!";
+}
 
+jsNinja();
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
