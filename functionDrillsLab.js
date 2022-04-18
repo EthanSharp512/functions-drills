@@ -245,9 +245,13 @@ printAllNames(namesArr);
 //CODE HERE
 function thatsOdd(num) {
   if(num % 2 === 0) {
-    return
+    return "That is not odd!";
+  } else {
+    return "That is odd indeed!"
   }
 }
+
+let oddChecker = thatsOdd(6);
 
 ////////////////// PROBLEM 14 ////////////////////
 
