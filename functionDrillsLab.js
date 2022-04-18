@@ -74,16 +74,16 @@ greeting('Jake');
 */
 
 //CODE HERE
-const compareNums = (num1, num2) => {
-  if(num1 > num2) {
-    return num1;
-  } else if(num1 < num2) {
-    return num2;
-  } 
-  compareNums();
-}
+// const compareNums = (num1, num2) => {
+//   if(num1 > num2) {
+//     return num1;
+//   } else if(num1 < num2) {
+//     return num2;
+//   } 
+//   compareNums();
+// }
 
-compareNums(5, 5);
+// compareNums(5, 5);
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -94,8 +94,16 @@ compareNums(5, 5);
 */
 
 //CODE HERE
+function add(num1, num2) {
+  let num1parse = parseInt(num1)
+  let num2parse = parseInt(num2)
 
+  let answer = num1parse + num2parse;
+  return answer;
+}
 
+let sum = add(5, 5);
+console.log(sum);
 ////////////////// PROBLEM 7 ////////////////////
 
 /*
