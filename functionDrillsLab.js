@@ -143,6 +143,7 @@ const exclaimTwo = str => {
   Brownie points if you use a template string
 */
 
+// function exclaimThree(`${input} !!!`);
 
 
 ////////////////// PROBLEM 9 ////////////////////
@@ -157,7 +158,7 @@ function exclaimFour(str) {
 }
 
 // arrow
-// declaration
+'declaration'
 // expression
 
 
