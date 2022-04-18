@@ -73,14 +73,18 @@ greeting('Jake');
     Brownie points if you use a ternary statement (only spend significant time on this if you have wiggle room)
 */
 
-//CODE HERE
-// const compareNums = (num1, num2) => {
-//   if(num1 > num2) {
-//     let bigger = num1;
-//   } else if(num1 < num2) {
-//     let bigger = num2;
-//   } return bigger;
-// }
+// CODE HERE
+const compareNums = (num1, num2) => {
+  if(num1 > num2) {
+    return num1;
+  } else if(num1 < num2) {
+    return num2;
+  } else {
+    return num1;
+  }
+}
+
+// const compareNums = (num1, num2) => (num1 >= num2) ? num1 : num2;
 
 // let test = compareNums(5, 5);
 // console.log(test);
@@ -143,7 +147,7 @@ const exclaimTwo = str => {
   Brownie points if you use a template string
 */
 
-// function exclaimThree(`${input} !!!`);
+const exclaimThree = str => (`${String(str).toUpperCase()}!!!`);
 
 
 ////////////////// PROBLEM 9 ////////////////////
@@ -239,7 +243,11 @@ printAllNames(namesArr);
 */
 
 //CODE HERE
-
+function thatsOdd(num) {
+  if(num % 2 === 0) {
+    return
+  }
+}
 
 ////////////////// PROBLEM 14 ////////////////////
 
