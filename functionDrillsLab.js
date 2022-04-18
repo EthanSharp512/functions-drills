@@ -76,14 +76,14 @@ greeting('Jake');
 //CODE HERE
 // const compareNums = (num1, num2) => {
 //   if(num1 > num2) {
-//     return num1;
+//     let bigger = num1;
 //   } else if(num1 < num2) {
-//     return num2;
-//   } 
-//   compareNums();
+//     let bigger = num2;
+//   } return bigger;
 // }
 
-// compareNums(5, 5);
+// let test = compareNums(5, 5);
+// console.log(test);
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -117,7 +117,7 @@ const exclaim = function(str) {
 
 // arrow
 // declaration
-// expression
+'expression'
 
 
 
