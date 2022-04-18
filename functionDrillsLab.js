@@ -264,6 +264,9 @@ let oddChecker = thatsOdd(6);
 */
 
 //CODE HERE
+const bestMovie = movieTitle => `${movieTitle} is the best movie ever!`;
+
+bestMovie("Sharknado");
 
 
 ////////////////// PROBLEM 15 ////////////////////
