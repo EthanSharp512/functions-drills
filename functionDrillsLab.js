@@ -353,15 +353,14 @@ upperMachine(sampleString);
 */
 
 function emailCheck(email) {
-  let newEmail = email.trim();
+  let newEmail = email.replaceAll(" ", "");
     if(newEmail.includes('@')) {
-      return "email verified" + newEmail
-      
+      return "email verified: " + newEmail
   } else {
       return "must provide a valid email adress"
   }
 }
-console.log(emailCheck("adsfa asdfa ddd@gmail.com"));
+console.log(emailCheck("  adsfa  avv sd    fadd@gmail.com"   ));
 
 ////////////////// PROBLEM 19 ////////////////////
 /*
@@ -438,13 +437,13 @@ function pond() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = []
+let globalScope = ['duck']
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = []
+let bathroomScope = ['duck', 'rubberDuck']
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = []
+let bathtubScope = ['duck', 'rubberDuck', 'sailorDuck']
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = []
+let pondScope = ['duck', 'realDuck']
