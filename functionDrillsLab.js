@@ -306,13 +306,21 @@ let loser = 'Glimmer'
 
 //CODE HERE
 function theEliminator (contestants, loser) {
-  let findLoser = contestants.includes(loser);
-
-  for(let i = 0; i < contestants.length; i++) {
-     if(contestants[i] = findLoser[i]) {
-        contestants.splice(findLoser, 1)
-    } return contestants
+  // const index = contestants.indexOf(loser);
+  // contestants.splice(index, 1); // 2nd parameter means remove one item only
+  // return contestants;
+  
+  const isLoserInArray = contestants.includes(loser);
+  let newContestants = [];
+  if(isLoserInArray) {
+    for(let i = 0; i < contestants.length; i++) {
+      if (contestants[i] !== loser) {
+        newContestants.push(contestants[i]);
+      }
+    }
   }
+  return newContestants
+
 }
 
 console.log(theEliminator(contestants, loser));
@@ -344,16 +352,16 @@ upperMachine(sampleString);
   return 'must provide a valid email address'
 */
 
-// function emailCheck(email) {
-//   let newEmail = String.email.trim();
-//     if(newEmail.includes('@')) {
-//       return "email verified" + newEmail
+function emailCheck(email) {
+  let newEmail = email.trim();
+    if(newEmail.includes('@')) {
+      return "email verified" + newEmail
       
-//   } else {
-//       return "must provide a valid email adress"
-//   }
-// }
-// emailCheck("adsfa asdfa ddd@gmail.com");
+  } else {
+      return "must provide a valid email adress"
+  }
+}
+console.log(emailCheck("adsfa asdfa ddd@gmail.com"));
 
 ////////////////// PROBLEM 19 ////////////////////
 /*
@@ -368,7 +376,7 @@ function cfCalc(gold) {
   return afford
 }
 
-totalFrogs = cfCalc(15);
+totalFrogs = cfCalc(14);
 console.log(totalFrogs);
 
 ////////////////// PROBLEM 20 ////////////////////
@@ -377,6 +385,13 @@ console.log(totalFrogs);
 */
 
 //CODE HERE
+function cfCalc2(gold) {
+  afford = Math.floor(gold / 3)
+  return afford
+}
+
+totalFrogs2 = cfCalc2(14);
+console.log(totalFrogs2);
 
 
 ////////////////// PROBLEM 21 ////////////////////
@@ -399,6 +414,7 @@ function isArraySorted(array) {
 }
 
 let arrayIsAscending = isArraySorted(sampleArray);
+
 
 ////////////////// PROBLEM 22 ////////////////////
 
