@@ -281,6 +281,19 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 */
 
 //CODE HERE
+function bigOrSmall(array) {
+  let answers = []
+
+  for (let i = 0; i < array.length; i++) {
+    if(array[i] > 100) {
+      answers.push("big");
+    } else {
+      answers.push("small")
+    } arrayEvaluator = answers;
+  }  return arrayEvaluator
+}
+
+console.log(bigOrSmall(bigOrSmallArray))
 
 
 ////////////////// PROBLEM 16 ////////////////////
@@ -339,7 +352,19 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 */
 
 //CODE HERE
+function isArraySorted(array) {
+    let checker = array[0];
+    for (let i = 0; i < array.length; i++) {
+      if(array[i] < checker) {
+        return false;
+    } else {
+        checker = array[i];
+    }
+  }
+  return true;
+}
 
+let arrayIsAscending = isArraySorted(sampleArray);
 
 ////////////////// PROBLEM 22 ////////////////////
 
