@@ -305,6 +305,17 @@ let loser = 'Glimmer'
 */
 
 //CODE HERE
+function theEliminator (contestants, loser) {
+  let findLoser = contestants.includes(loser);
+
+  for(let i = 0; i < contestants.length; i++) {
+     if(contestants[i] = findLoser[i]) {
+        contestants.splice(findLoser, 1)
+    } return contestants
+  }
+}
+
+console.log(theEliminator(contestants, loser));
 
 
 ////////////////// PROBLEM 17 ////////////////////
@@ -315,7 +326,12 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
+function upperMachine(toBeUpper) {
+  let nowUpper = toBeUpper.toUpperCase();
+  return nowUpper
+}
 
+upperMachine(sampleString);
 
 ////////////////// PROBLEM 18 ////////////////////
 /*
