@@ -363,6 +363,13 @@ upperMachine(sampleString);
 
 //CODE HERE
 
+function cfCalc(gold) {
+  afford = gold / 3
+  return afford
+}
+
+totalFrogs = cfCalc(15);
+console.log(totalFrogs);
 
 ////////////////// PROBLEM 20 ////////////////////
 /*
